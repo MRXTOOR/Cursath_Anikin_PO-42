@@ -740,3 +740,5 @@ INFO 2023-10-30 08:08:31,100 "GET /static/plugins/fontawesome-free/webfonts/fa-r
 INFO 2023-10-30 08:08:31,101 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
 INFO 2023-10-30 08:09:18,227 Watching for file changes with StatReloader
 INFO 2023-10-30 08:09:20,904 "POST /result/create/ HTTP/1.1" 200 10557
+INFO 2023-10-30 09:49:18,933 C:\Users\Harry\Desktop\Django-School-Management-System\apps\staffs\views.py changed, reloading.
+INFO 2023-10-30 09:49:19,737 Watching for file changes with StatReloader
