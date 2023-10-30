@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content-header %}
+<div class="card-header">
+  <div class="card-tools">
+    <a href="#" class="btn btn-tool">Печать</a>
+    <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
+      <i class="fas fa-edit"></i>
+    </a>
+    <a href="{% url 'invoice-delete' object.id %}" class="btn btn-tool">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+</div>
+{% endblock content-header %}
+
+
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-4">
+    <h3>{{ object }} </h3>
+    <h5>{{ object.session }} </h5>
+    <h5>{{ object.term }} </h5>
+    <h5>{{ object.class_for }} </h5>
+    <h6>Статус: {{ object.get_status_display }} </h6>
+    <hr>
+    <div>
+      <h4>Ожидаемый баланс: {{ object.balance | intcomma }}</h4>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <table class="table table-sm table-bordered">
+      Разбивка счета</br>
+      <thead class="thead-light">
+        <tr>
+          <th>С/Н</th>
+          <th>Описание</th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>{{ forloop.counter }} </td>
+          <td>{{ item.description }} </td>
+          <td>{{ item.amount }} </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Общая сумма за этот срок</td>
+          <td>{{ object.amount_payable | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Баланс с предыдущего срока</td>
+          <td>{{ object.balance_from_previous_term | intcomma }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Общая сумма к оплате</td>
+          <td>{{ object.total_amount_payable | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Общая сумма оплачено</td>
+          <td>{{ object.total_amount_paid | intcomma}}</td>
+        </tr>
+
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<h5>История оплат</h5>
+<table class="table table-bordered table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th>С/Н</th>
+      <th>Оплаченная сумма</th>
+      <th>Дата оплаты</th>
+      <th>Комментарий к оплате</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for receipt in receipts %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ receipt.amount_paid}}</td>
+      <td>{{ receipt.date_paid}}</td>
+      <td>{{ receipt.comment}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock content %}

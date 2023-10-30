@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-8">
+    <form action="" method="POST">
+      {% csrf_token %}
+
+      {% include 'corecode/form_snippet.html' %}
+
+      <input type="submit" class="btn btn-primary" value="Добавить платеж">
+
+    </form>
+  </div>
+
+  <div class="col-4">
+    <div class="alert alert-info" role="alert">
+      <h3>СЧЕТ</h3>
+      <p>{{invoice | upper}}</p>
+      <hr>
+      <ul>
+
+        <li>Сессия: {{ invoice.session }}</li>
+        <li>Семестр: {{ invoice.term }}</li>
+        <li>Класс: {{ invoice.class_for }}</li>
+        <li>Общая сумма к оплате: {{invoice.total_amount_payable | intcomma }}
+        </li>
+        <li>Общая оплаченная сумма: {{ invoice.total_amount_paid | intcomma }}</li>
+        <li><strong>Остаток: {{invoice.balance | intcomma }}</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

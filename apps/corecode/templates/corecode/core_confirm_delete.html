@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<span class="card-title"><strong>{{ object}}</strong> собирается
+  быть удален!</span>
+{% endblock title %}
+
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <p>Вы уверены, что хотите удалить объект <strong>{{ object}}</strong>
+            вместе со всеми прикрепленными данными?</p>
+          <div class="mt-2 red-text">Это действие нельзя отменить</div>
+
+          <form method="POST" class="mt-3">
+            {% csrf_token %}
+
+            <button type="submit" class="btn btn-primary">
+              Подтвердить удаление
+              <i class="fa fa-trash-alt"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
