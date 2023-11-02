@@ -742,3 +742,112 @@ INFO 2023-10-30 08:09:18,227 Watching for file changes with StatReloader
 INFO 2023-10-30 08:09:20,904 "POST /result/create/ HTTP/1.1" 200 10557
 INFO 2023-10-30 09:49:18,933 C:\Users\Harry\Desktop\Django-School-Management-System\apps\staffs\views.py changed, reloading.
 INFO 2023-10-30 09:49:19,737 Watching for file changes with StatReloader
+INFO 2023-10-30 17:23:35,953 Watching for file changes with StatReloader
+INFO 2023-10-30 17:23:37,992 "GET / HTTP/1.1" 302 0
+INFO 2023-10-30 17:23:38,008 "GET /accounts/login/?next=/ HTTP/1.1" 200 4155
+INFO 2023-10-30 17:23:38,022 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,022 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,024 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,028 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,030 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,038 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,038 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,038 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,039 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,042 "GET /static/dist/js/demo.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,042 "GET /static/dist/js/adminlte.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:38,097 "GET /static/dist/img/school.png HTTP/1.1" 200 39717
+INFO 2023-10-30 17:23:38,100 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2023-10-30 17:23:38,568 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+WARNING 2023-10-30 17:23:38,597 Not Found: /favicon.ico
+WARNING 2023-10-30 17:23:38,598 "GET /favicon.ico HTTP/1.1" 404 6308
+INFO 2023-10-30 17:23:50,707 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2023-10-30 17:23:50,723 "GET / HTTP/1.1" 200 9048
+INFO 2023-10-30 17:23:50,736 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:50,737 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 304 0
+INFO 2023-10-30 17:23:50,777 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2023-10-30 17:25:49,631 "GET /student/list HTTP/1.1" 200 9751
+INFO 2023-10-30 17:25:51,120 "GET / HTTP/1.1" 200 9048
+INFO 2023-10-30 17:25:53,945 "GET / HTTP/1.1" 200 9048
+INFO 2023-10-30 17:25:55,724 "GET /student/list HTTP/1.1" 200 9751
+INFO 2023-10-30 17:25:59,131 "GET /student/create/ HTTP/1.1" 200 13338
+INFO 2023-10-30 17:26:27,067 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2023-10-30 17:26:27,088 "GET /student/2/ HTTP/1.1" 200 11176
+INFO 2023-10-30 17:26:27,110 "GET /media/students/passports/m_69_osnovne-hrafichne-zobrazhennia-symvolu.jpg HTTP/1.1" 200 122713
+INFO 2023-10-30 17:26:37,490 "GET /student/2/update/ HTTP/1.1" 200 13762
+INFO 2023-10-30 17:26:44,870 "GET /student/2/ HTTP/1.1" 200 11027
+INFO 2023-10-30 17:26:46,679 "GET /staff/list/ HTTP/1.1" 200 9418
+INFO 2023-10-30 17:26:48,032 "GET /staff/create/ HTTP/1.1" 200 12326
+INFO 2023-10-30 17:26:49,681 "GET /staff/list/ HTTP/1.1" 200 9418
+INFO 2023-10-30 17:26:50,906 "GET /staff/create/ HTTP/1.1" 200 12326
+INFO 2023-10-30 17:27:02,077 "POST /staff/create/ HTTP/1.1" 302 0
+INFO 2023-10-30 17:27:02,093 "GET /staff/1/ HTTP/1.1" 200 10620
+INFO 2023-10-30 17:27:20,703 "GET /staff/1/update/ HTTP/1.1" 200 12436
+INFO 2023-10-30 17:27:26,985 "GET /finance/list/ HTTP/1.1" 200 10170
+INFO 2023-10-30 17:27:31,159 "GET /finance/create/ HTTP/1.1" 200 13226
+ERROR 2023-10-30 17:27:52,981 Internal Server Error: /finance/create/
+Traceback (most recent call last):
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 108, in debug_sql
+    yield
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+OverflowError: Python int too large to convert to SQLite INTEGER
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\apps\finance\views.py", line 36, in form_valid
+    self.object = form.save()
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\forms\models.py", line 468, in save
+    self.instance.save()
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 97, in execute
+    with self.debug_sql(sql, params, use_last_executed_query=True):
+  File "C:\Users\Harry\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\utils.py", line 113, in debug_sql
+    sql = self.db.ops.last_executed_query(self.cursor, sql, params)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\sqlite3\operations.py", line 159, in last_executed_query
+    params = self._quote_params_for_last_executed_query(params)
+  File "C:\Users\Harry\Desktop\Django-School-Management-System\venv\lib\site-packages\django\db\backends\sqlite3\operations.py", line 148, in _quote_params_for_last_executed_query
+    return cursor.execute(sql, params).fetchone()
+OverflowError: Python int too large to convert to SQLite INTEGER
+ERROR 2023-10-30 17:27:52,984 "POST /finance/create/ HTTP/1.1" 500 191469
+INFO 2023-10-30 17:28:01,474 "POST /finance/create/ HTTP/1.1" 302 0
+INFO 2023-10-30 17:28:01,482 "GET /finance/list HTTP/1.1" 301 0
+INFO 2023-10-30 17:28:01,506 "GET /finance/list/ HTTP/1.1" 200 10649
