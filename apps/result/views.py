@@ -68,7 +68,7 @@ def create_result(request):
             messages.warning(request, "You didnt select any student.")
     return render(request, "result/create_result.html", {"students": students})
 
-
+#ddd
 @login_required
 def edit_results(request):
     if request.method == "POST":
